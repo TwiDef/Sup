@@ -45,7 +45,39 @@ h6 {
     background-image: url('../img/header/header-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/header/pines-up.svg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 456px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(40%);
+    z-index: 2;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/header/pines-down.svg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 456px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(70%);
+    z-index: 3;
 }
 
 .header__top {
@@ -54,6 +86,10 @@ h6 {
     padding: 56px 0;
     gap: 100px;
     justify-content: flex-end;
+    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    line-height: 22px;
 }
 
 .logo path {
@@ -67,11 +103,42 @@ h6 {
 .header__btn {
     text-transform: uppercase;
     color: var(--white);
-    font-weight: 700;
-    font-family: 'Comfortaa', cursive;
-    font-size: 20px;
     padding: 10px 70px;
     background-color: var(--dark);
     border: none;
     cursor: pointer;
+}
+
+.header__content {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__content-box {
+    max-width: 550px;
+    text-align: center;
+    margin-right: 30px;
+    color: var(--white);
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+}
+
+.header__title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 71px;
+}
+
+.header__text {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.header__decor-text {
+    position: absolute;
+    top: 0;
 }
