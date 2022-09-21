@@ -178,3 +178,10 @@ p {
     font-style: italic;
     bottom: -10px;
 }
+
+.info {
+    background-image: url(../img/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
