@@ -31,7 +31,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
 }
 
@@ -114,6 +115,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
 .header__content-box {
@@ -140,5 +142,39 @@ h6 {
 
 .header__decor-text {
     position: absolute;
-    top: 0;
+    bottom: 26px;
+    color: var(--blue);
+}
+
+.header__decor-text--one {
+    z-index: 1;
+    right: 152px;
+    bottom: 90px;
+}
+
+.header__decor-text--one,
+.header__decor-text--two {
+    font-family: 'Comfortaa';
+    font-size: 130px;
+    line-height: 140px;
+    font-weight: 400;
+    opacity: 0.3;
+}
+
+.header__decor-text--two {
+    z-index: 4;
+    left: 264px;
+    bottom: -36px;
+}
+
+.header__decor-text--three {
+    max-width: 360px;
+    right: 146px;
+    z-index: 4;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    font-style: italic;
+    bottom: -10px;
 }
