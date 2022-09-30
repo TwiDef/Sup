@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Inter:wght@300;400;700;800&display=swap');
+@import url('./animations.css');
 :root {
     --dark: #262C27;
     --white: #FFFFFF;
@@ -113,6 +114,7 @@ ul {
     padding: 10px 70px;
     background-color: var(--dark);
     border: none;
+    transition: all .3s;
     cursor: pointer;
 }
 
@@ -290,4 +292,86 @@ ul {
 
 .info__specs-caption {
     width: 186px;
+}
+
+.buy {
+    padding: 150px 0;
+}
+
+.buy__inner {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.buy__content {
+    position: relative;
+    width: 510px;
+}
+
+.buy__title {
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 67px;
+    color: var(--blue);
+}
+
+.buy__list {
+    margin-bottom: 25px;
+}
+
+.buy__item {
+    margin-bottom: 25px;
+    width: 286px;
+}
+
+.buy__item:hover .buy__item-title {
+    color: var(--blue);
+}
+
+.buy__item-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: color .3s;
+}
+
+.buy__price {
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    width: 200px;
+    height: 200px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/buy/price-small.svg);
+}
+
+.buy__btn {
+    color: var(--blue);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    font-family: 'Comfortaa';
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    padding: 18px;
+    text-align: center;
+    max-width: 484px;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.buy__btn:hover {
+    color: var(--dark);
+    background-color: var(--green);
+    border: 2px solid var(--green);
 }
