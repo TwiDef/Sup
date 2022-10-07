@@ -241,6 +241,7 @@ ul {
 }
 
 .popup-btn {
+    position: absolute;
     text-align: center;
     border: none;
     cursor: pointer;
@@ -254,7 +255,6 @@ ul {
 }
 
 .info__btn {
-    position: absolute;
     bottom: 0;
     right: 0;
 }
@@ -295,7 +295,7 @@ ul {
 }
 
 .buy {
-    padding: 150px 0;
+    padding: 150px 0 0;
 }
 
 .buy__inner {
@@ -374,4 +374,31 @@ ul {
     color: var(--dark);
     background-color: var(--green);
     border: 2px solid var(--green);
+}
+
+.technology {
+    margin-bottom: 150px;
+}
+
+.technology__top {
+    background-image: url(../img/technology/technology-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.technology__top-inner {
+    position: relative;
+    min-height: 110vh;
+}
+
+.technology__btn {
+    right: 350px;
+    top: 50vh;
+}
+
+.technology__top-box {
+    position: absolute;
+    left: 0;
+    bottom: 86px;
 }
