@@ -499,6 +499,7 @@ img {
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 1;
 }
 
 .gallery-min__img--1 {
@@ -619,7 +620,7 @@ img {
 }
 
 .footer__form-btn:hover {
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 
 .footer__social-title {

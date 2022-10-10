@@ -134,9 +134,7 @@
 
 .hvr-shutter-in-horizontal-white:hover,
 .hvr-shutter-in-horizontal-white:focus,
-.hvr-shutter-in-horizontal-white:active {
-    color: white;
-}
+.hvr-shutter-in-horizontal-white:active {}
 
 .hvr-shutter-in-horizontal-white:hover:before,
 .hvr-shutter-in-horizontal-white:focus:before,
@@ -215,7 +213,7 @@
 .hvr-bubble-top:active:before {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
-    border-color: transparent transparent var(--blue) transparent;
+    border-color: transparent transparent var(--green) transparent;
 }
 
 
