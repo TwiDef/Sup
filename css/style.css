@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Inter:wght@300;400;700;800&display=swap');
 @import url('./animations.css');
+@import url('./media.css');
 :root {
     --dark: #262C27;
     --white: #FFFFFF;
@@ -20,6 +21,10 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: var(--dark);
+}
+
+.none {
+    display: none;
 }
 
 a {
@@ -613,6 +618,10 @@ img {
     font-weight: 700;
 }
 
+.footer__form-btn:hover {
+    background-color: var(--blue);
+}
+
 .footer__social-title {
     margin-bottom: 28px;
     font-weight: 700;
@@ -631,5 +640,9 @@ img {
     justify-content: space-between;
 }
 
+.footer__menu-item:hover {
+    color: var(--blue);
+}
 
-/* 3:38:01 */
+
+/* 4:02:01 */
