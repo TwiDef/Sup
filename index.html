@@ -28,7 +28,7 @@
                         </g>
                     </svg>
                 </a>
-                <button class="header__btn hvr-shutter-in-horizontal-dark">BUY</button>
+                <a href="#popup" class="header__btn hvr-shutter-in-horizontal-dark">BUY</a>
                 <a class="header__phone hvr-underline-from-center" href="tel:+17777777">+1 777 77 77</a>
             </div>
             <div class="header__content">
@@ -139,7 +139,7 @@
                             </li>
                             <div class="buy__price hvr-bounce-in">590 €</div>
                         </ul>
-                        <button class="buy__btn hvr-shutter-in-horizontal-white">BUY</button>
+                        <a href="#popup" class="buy__btn hvr-shutter-in-horizontal-white">BUY</a>
                     </div>
                     <img class="buy__img" src="./img/buy/supKit.jpg" alt="kit">
                 </div>
@@ -248,6 +248,19 @@
         </footer>
     </main>
 
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">&times;</a>
+                <form class="popup__form">
+                    <h3 class="popup__title title">CONTACT US</h3>
+                    <input class="popup__form-input" type="text" placeholder="NAME">
+                    <input class="popup__form-input" type="email" placeholder="E-MAIL">
+                    <button class="popup__form-btn hvr-bubble-top" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
