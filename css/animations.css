@@ -1,3 +1,10 @@
+:root {
+    --dark: #262C27;
+    --white: #FFFFFF;
+    --blue: #0093A1;
+    --green: #B9C400;
+}
+
 .hvr-grow-rotate {
     display: inline-block;
     vertical-align: middle;
@@ -34,4 +41,178 @@
     transform: scale(1.2);
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+
+/* Shutter In Horizontal dark */
+
+.hvr-shutter-in-horizontal-dark {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #2098D1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-shutter-in-horizontal-dark:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-shutter-in-horizontal-dark:hover,
+.hvr-shutter-in-horizontal-dark:focus,
+.hvr-shutter-in-horizontal-dark:active {
+    color: white;
+}
+
+.hvr-shutter-in-horizontal-dark:hover:before,
+.hvr-shutter-in-horizontal-dark:focus:before,
+.hvr-shutter-in-horizontal-dark:active:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+
+/* Shutter In Horizontal white */
+
+.hvr-shutter-in-horizontal-white {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #2098D1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-shutter-in-horizontal-white:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-shutter-in-horizontal-white:hover,
+.hvr-shutter-in-horizontal-white:focus,
+.hvr-shutter-in-horizontal-white:active {
+    color: white;
+}
+
+.hvr-shutter-in-horizontal-white:hover:before,
+.hvr-shutter-in-horizontal-white:focus:before,
+.hvr-shutter-in-horizontal-white:active:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+
+/* Underline From Center */
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: var(--blue);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+
+/* Bubble Top */
+
+.hvr-bubble-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.hvr-bubble-top:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    left: calc(50% - 10px);
+    top: 0;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--white) transparent;
+}
+
+.hvr-bubble-top:hover:before,
+.hvr-bubble-top:focus:before,
+.hvr-bubble-top:active:before {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
 }

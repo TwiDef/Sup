@@ -70,6 +70,10 @@ img {
     position: relative;
 }
 
+.header__phone {
+    padding-bottom: 2px;
+}
+
 .header::before {
     content: "";
     position: absolute;
