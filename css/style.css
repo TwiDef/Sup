@@ -264,6 +264,24 @@ img {
     padding-top: 12px;
     display: block;
     color: var(--white);
+    transition: color .3s;
+}
+
+.popup-btn path,
+.popup-btn circle {
+    transition: all .3s;
+}
+
+.popup-btn:hover path {
+    fill: var(--green);
+}
+
+.popup-btn:hover circle {
+    stroke: var(--green);
+}
+
+.popup-btn:hover span {
+    color: var(--blue);
 }
 
 .info__btn {
@@ -528,5 +546,86 @@ img {
     align-items: center;
 }
 
+.footer {
+    background-color: var(--dark);
+    padding: 100px 0 84px;
+    color: var(--white);
+}
 
-/* 2:53:01 */
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    margin-bottom: 26px;
+}
+
+.footer__logo {
+    align-self: flex-start;
+}
+
+.footer__logo path {
+    transition: fill .3s;
+}
+
+.footer__logo:hover path {
+    fill: var(--blue);
+}
+
+.footer__form {
+    max-width: 500px;
+}
+
+.footer__form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    margin-bottom: 58px;
+    color: var(--white);
+}
+
+.footer__form-input::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.4;
+}
+
+.footer__form-btn {
+    background-color: var(--white);
+    padding: 10px 66px;
+    border: none;
+    margin-bottom: 110px;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 22px;
+    font-size: 20px;
+    color: var(--dark);
+    font-family: 'Comfortaa';
+    font-weight: 700;
+}
+
+.footer__social-title {
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+
+.footer__gallery {
+    display: grid;
+    gap: 52px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+}
+
+.footer__menu-list {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 3:38:01 */
