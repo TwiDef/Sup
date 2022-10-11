@@ -661,15 +661,15 @@ img {
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
-    transition: all 0.5s ease 0s;
+    transition: all 0.6s ease 0s;
 }
 
-.popup:target {
+.popup.open {
     opacity: 1;
     visibility: visible;
 }
 
-.popup:target .popup__content {
+.popup.open .popup__content {
     transform: perspective(600px) translate(0px, -0%) rotateX(0deg);
     opacity: 1;
 }
@@ -687,7 +687,7 @@ img {
     max-width: 800px;
     padding: 60px 30px 40px 30px;
     position: relative;
-    transition: all 0.5s ease 0s;
+    transition: all 0.6s ease 0s;
     opacity: 0;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
@@ -697,6 +697,7 @@ img {
     top: 10px;
     right: 10px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .popup__close:hover {
