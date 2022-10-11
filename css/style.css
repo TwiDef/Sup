@@ -743,3 +743,29 @@ img {
 .popup__form-btn:hover {
     background-color: var(--green);
 }
+
+.btnUp {
+    background: rgba(0, 0, 0, 0.282);
+    color: var(--blue);
+    line-height: 50px;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 5;
+    border-radius: 6px;
+    transition: all .3s;
+}
+
+.btnUp:hover {
+    color: var(--green);
+}
+
+.btnUp-open {
+    display: block;
+}

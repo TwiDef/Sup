@@ -43,4 +43,24 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', showModalbyScroll);
 
     /* ############ */
+
+    /* Button scroll */
+
+    window.addEventListener('scroll', () => {
+        const btnUp = document.querySelector('.btnUp');
+
+        if (window.pageYOffset > 2800) { // window.innerHeight
+            btnUp.style.display = 'block';
+        } else {
+            btnUp.style.display = 'none';
+        }
+        btnUp.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    /* ############# */
 });
