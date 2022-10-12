@@ -3,15 +3,29 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const modal = document.querySelector('#popup');
     const trigger = document.querySelectorAll('#modal-btn');
+    const scroll = calcScroll();
+
+    function calcScroll() {
+        let div = document.createElement('div');
+        div.style.width = '50px';
+        /* div.style.height = '50px'; */
+        div.style.overflowY = 'scroll';
+        div.style.visibility = 'hidden';
+        document.body.appendChild(div);
+        let scrollWidth = div.offsetWidth - div.clientWidth;
+        return scrollWidth;
+    }
 
     function openModal(modal) {
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
+        document.body.style.marginRight = `${scroll}px`;
     }
 
     function closeModal(modal) {
         modal.classList.remove('open');
         document.body.style.overflow = '';
+        document.body.style.marginRight = `0px`;
     }
 
     trigger.forEach((btn) => {
@@ -123,7 +137,43 @@ window.addEventListener('DOMContentLoaded', () => {
 
     forms(modalState);
 
+
+
+    /*  Video Modal  */
+
+
+    const video = document.querySelector('#video');
+    const videoTrigger = document.querySelectorAll('.popup-btn');
+
+    function openVideo(modal) {
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideo(modal) {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    videoTrigger.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            openVideo(video);
+        });
+    });
+
+
+    video.addEventListener('click', (e) => {
+        if (e.target !== document.querySelector('.video__content')) {
+            closeVideo(video);
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape" && video.classList.contains('open')) {
+            closeVideo(video);
+        }
+    });
+
+    /* ############# */
+
 });
-
-
-console.log();
