@@ -202,10 +202,10 @@
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__top">
-                        <form class="footer__form">
+                        <form class="footer__form" action="#">
                             <h3 class="footer__title title">CONTACT US</h3>
-                            <input class="footer__form-input" type="text" placeholder="NAME">
-                            <input class="footer__form-input" type="email" placeholder="E-MAIL">
+                            <input class="footer__form-input" required type="text" placeholder="NAME" name="name">
+                            <input class="footer__form-input" required type="email" placeholder="E-MAIL" name="email">
                             <button id="form-btn" class="footer__form-btn hvr-bubble-top" type="submit">SEND</button>
                         </form>
                         <a href="#" class="footer__logo">
@@ -252,10 +252,10 @@
         <div class="popup__body">
             <div class="popup__content">
                 <a data-close class="popup__close">&times;</a>
-                <form class="popup__form">
+                <form class="popup__form" action="#">
                     <h3 class="popup__title title">CONTACT US</h3>
-                    <input class="popup__form-input" type="text" placeholder="NAME" name="name">
-                    <input class="popup__form-input" type="email" placeholder="E-MAIL" name="email">
+                    <input class="popup__form-input" required type="text" placeholder="NAME" name="name">
+                    <input class="popup__form-input" required type="email" placeholder="E-MAIL" name="email">
                     <button id="form-btn" class="popup__form-btn hvr-bubble-top" type="submit">SEND</button>
                 </form>
             </div>

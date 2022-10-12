@@ -738,6 +738,7 @@ img {
     color: var(--dark);
     font-family: 'Comfortaa';
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .popup__form-btn:hover {
@@ -768,4 +769,11 @@ img {
 
 .btnUp-open {
     display: block;
+}
+
+.status {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: var(--green);
 }
