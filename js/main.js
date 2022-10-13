@@ -137,40 +137,31 @@ window.addEventListener('DOMContentLoaded', () => {
 
     forms(modalState);
 
-
-
     /*  Video Modal  */
 
 
-    const video = document.querySelector('#video');
+    const videoContainer = document.querySelector('.video__container');
     const videoTrigger = document.querySelectorAll('.popup-btn');
+    const video = document.querySelector('#video');
+    let videoLink = 'https://www.youtube.com/embed/tUZ_XbP5lr4';
 
-    function openVideo(modal) {
-        modal.classList.add('open');
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeVideo(modal) {
-        modal.classList.remove('open');
-        document.body.style.overflow = '';
-    }
-
-    videoTrigger.forEach((btn) => {
+    videoTrigger.forEach(btn => {
         btn.addEventListener('click', () => {
-            openVideo(video);
+            videoContainer.innerHTML = `
+            <div class="video__content">
+                <iframe src=${videoLink} title="Fanatic Ray Touring 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            `;
+            video.classList.add('open');
+            document.body.style.overflow = 'hidden';
         });
     });
 
-
     video.addEventListener('click', (e) => {
         if (e.target !== document.querySelector('.video__content')) {
-            closeVideo(video);
-        }
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.code === "Escape" && video.classList.contains('open')) {
-            closeVideo(video);
+            videoContainer.innerHTML = ``;
+            video.classList.remove('open');
+            document.body.style.overflow = '';
         }
     });
 

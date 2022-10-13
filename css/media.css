@@ -165,6 +165,9 @@
     .popup__title {
         font-size: 34px;
     }
+    .video__container {
+        padding: 60px 60px;
+    }
 }
 
 @media (max-width: 414px) {
